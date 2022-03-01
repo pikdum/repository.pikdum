@@ -1,0 +1,3 @@
+[submodule "repo/plugin.video.haru"]
+	path = repo/plugin.video.haru
+	url = https://github.com/pikdum/plugin.video.haru.git
