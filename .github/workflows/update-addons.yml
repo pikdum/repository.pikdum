@@ -1,0 +1,20 @@
+on:
+  workflow_dispatch:
+name: Update Addons
+jobs:
+  update-addons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+      - name: Update Addons
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Action"
+          git submodule update --remote --merge --force
+          python3 _repo_generator.py
+          git add -v .
+          git commit -m 'chore: update addons'
+          git push
