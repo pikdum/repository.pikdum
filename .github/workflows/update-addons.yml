@@ -9,12 +9,9 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-      - name: Update Addons
-        run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Action"
+      - run: |
           git submodule update --remote --merge --force
           python3 _repo_generator.py
-          git add -v .
-          git commit -m 'chore: update addons'
-          git push
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: update addons"
