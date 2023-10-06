@@ -12,6 +12,6 @@ jobs:
       - run: |
           git submodule update --remote --merge --force
           python3 _repo_generator.py
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update addons"
