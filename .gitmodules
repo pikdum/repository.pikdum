@@ -1,3 +1,9 @@
 [submodule "repo/plugin.video.haru"]
 	path = repo/plugin.video.haru
 	url = https://github.com/pikdum/plugin.video.haru.git
+[submodule "repo/repository.github"]
+	path = repo/repository.github
+	url = git@github.com:i96751414/repository.github.git
+[submodule "repo/repository.elementumorg"]
+	path = repo/repository.elementumorg
+	url = git@github.com:ElementumOrg/repository.elementumorg.git
