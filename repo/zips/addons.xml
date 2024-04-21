@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.video.haru" name="haru" version="1.15.0" provider-name="pikdum">
+<addons><addon id="plugin.video.haru" name="haru" version="1.16.0" provider-name="pikdum">
   
   <requires>
     <import addon="xbmc.python" version="3.00.0" />
@@ -20,7 +20,13 @@
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-    <news>1.15.0 (2024-04-20)
+    <news>1.16.0 (2024-04-21)
+
+Features
+
+-   sukebei: add latest and popular (d631ad6)
+
+1.15.0 (2024-04-20)
 
 Features
 
@@ -70,9 +76,7 @@ Features
 
 -   allow configuring torrent search category (71cb07e)
 -   move clear history under settings (3f97401)
--   subsplease: move all airing to bottom (74a1847)
--   sukebei support (7201047)
--   torrents: allow choosing sea...</news>
+-   subsplease: move all airing to b...</news>
   </extension>
 </addon><addon id="repository.elementumorg" name="ElementumOrg repository" provider-name="elementumorg" version="0.0.2">
     <requires>
