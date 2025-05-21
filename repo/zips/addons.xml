@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.video.haru" name="haru" version="1.22.0" provider-name="pikdum">
+<addons><addon id="plugin.video.haru" name="haru" version="1.23.0" provider-name="pikdum">
   
   <requires>
     <import addon="xbmc.python" version="3.00.0" />
@@ -20,7 +20,13 @@
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-    <news>1.22.0 (2024-09-06)
+    <news>1.23.0 (2025-05-21)
+
+Features
+
+-   add ‘Play’ option to context menus (#61) (1b69cb7)
+
+1.22.0 (2024-09-06)
 
 Features
 
@@ -85,18 +91,11 @@ Bug Fixes
 
 Features
 
--   new icons &amp; more (#49) (ef97264)
-
-1.16.0 (2024-04-21)
-
-Features
-
--   sukebei: add latest and popular (d631ad6)
-
-1.15.0 ...</news>
+-   new icons &amp; more (#49) (ef97...</news>
   </extension>
-</addon><addon id="repository.elementumorg" name="ElementumOrg repository" provider-name="elementumorg" version="0.0.2">
+</addon><addon id="repository.elementumorg" name="ElementumOrg repository" provider-name="elementumorg" version="0.0.6">
     <requires>
+        
     </requires>
     <extension point="xbmc.addon.repository">
         <dir>
@@ -114,12 +113,18 @@ Features
         <summary lang="en">GitHub virtual Add-on repository</summary>
         <description lang="en">Customizable repository which acts as a proxy for defined GitHub users' add-ons updates.</description>
         <news>
+- Allow running in standalone mode
+- Migrate to GitHub API
+- Add support for "tag_pattern" field
+- Add support for private repositories by supplying a "token"
+- Try to automatically determine zip ref from version
+- Multiple minor improvements
         </news>
         <assets>
             <icon>icon.png</icon>
         </assets>
     </extension>
-</addon><addon id="repository.github" name="GitHub Add-on repository" provider-name="i96751414" version="0.0.8">
+</addon><addon id="repository.github" name="GitHub Add-on repository" provider-name="i96751414" version="0.0.11">
     <requires>
         
     </requires>
@@ -139,9 +144,9 @@ Features
         <summary lang="en">GitHub virtual Add-on repository</summary>
         <description lang="en">Customizable repository which acts as a proxy for defined GitHub users' add-ons updates.</description>
         <news>
-- Improve HTTP server
-- Add spanish translation
-- Allow extracting information about running platform
+- Fix getting Kodi platform due to encoding
+- Add script.logviewer to repository
+- Allow release and http asset types when asset_prefix is provided
         </news>
         <assets>
             <icon>icon.png</icon>
